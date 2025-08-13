@@ -32,6 +32,7 @@ def run():
     sns.countplot(data=data, x='loan_status', palette='Blues', ax=ax)
     ax.set_title('Distribusi Loan Status')
     st.pyplot(fig)
+    st.write('Approved sebanyak 2.680 data (62,1%) dan Rejected sebanyak 1.635 data (37,9%). Visualisasi ini menunjukkan jumlah Approved lebih banyak dibanding Rejected.')
 
     st.write('## Perbedaan skor CIBIL antara tipe pinjaman')
     fig, ax = plt.subplots(figsize=(6, 4))
@@ -62,4 +63,5 @@ def run():
         ax=ax
     )
     ax.set_title('Distribusi Loan Term berdasarkan Loan Status')
+
     st.pyplot(fig)
