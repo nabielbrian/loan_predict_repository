@@ -13,7 +13,7 @@ def run():
         no_of_dependents = st.number_input("Jumlah Tanggungan", min_value=0, step=1)
         income_annum = st.number_input("Pendapatan Tahunan", min_value=0)
         loan_amount = st.number_input("Jumlah Pinjaman", min_value=0)
-        loan_term = st.number_input("Jangka Waktu Pinjaman (bulan)", min_value=0)
+        loan_term = st.number_input("Jangka Waktu Pinjaman (tahun)", min_value=0, max_value=20)
         cibil_score = st.number_input("CIBIL Score", min_value=0, max_value=900)
 
         residential_assets_value = st.number_input("Nilai Aset Tempat Tinggal", min_value=0)
@@ -55,4 +55,5 @@ def run():
             f"<h2 style='color:{color};'>Prediksi Loan Status: {status}</h2>",
             unsafe_allow_html=True
         )
+
 
