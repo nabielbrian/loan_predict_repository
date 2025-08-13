@@ -39,7 +39,7 @@ def run():
     sns.boxplot(data=data, x='loan_status', y='cibil_score', palette='Blues', ax=ax)
     ax.set_title('Distribusi CIBIL Score Berdasarkan Loan Status')
     st.pyplot(fig)
-    st.write('Grafik menunjukkan bahwa pemohon dengan status Approved memiliki median skor CIBIL sekitar 710 (IQR ±620–800) yang jauh lebih tinggi dibandingkan pemohon dengan status Rejected, yang memiliki median sekitar 430 (IQR ±370–490). Sebaran skor pada kelompok Approved juga berada di kisaran yang lebih tinggi, sedangkan kelompok Rejected umumnya di kisaran skor rendah. Perbedaan median yang besar ini menegaskan bahwa semakin tinggi skor CIBIL, semakin besar peluang persetujuan pinjaman.')
+    st.write("Grafik menunjukkan bahwa pemohon dengan status Approved memiliki median skor CIBIL sekitar 710 (IQR ±620–800) yang jauh lebih tinggi dibandingkan pemohon dengan status Rejected, yang memiliki median sekitar 430 (IQR ±370–490). Sebaran skor pada kelompok Approved juga berada di kisaran yang lebih tinggi, sedangkan kelompok Rejected umumnya di kisaran skor rendah. Perbedaan median yang besar ini menegaskan bahwa semakin tinggi skor CIBIL, semakin besar peluang persetujuan pinjaman")
 
     st.write('## Hubungan antar Loan Amount dengan Loan Status?')
     fig, ax = plt.subplots(figsize=(6, 4))
@@ -68,4 +68,5 @@ def run():
 
     st.pyplot(fig)
     st.write('Grafik menunjukkan bahwa tenor 2 dan 4 tahun memiliki jumlah persetujuan tertinggi dengan selisih besar dibandingkan penolakan. Untuk tenor di atas 6 tahun, selisih persetujuan dan penolakan semakin kecil, menandakan peluang persetujuan lebih rendah. Secara umum, tenor pendek cenderung lebih disukai dan memiliki tingkat persetujuan lebih tinggi, meskipun tenor panjang tetap memperoleh persetujuan dalam jumlah cukup besar namun dengan selisih lebih tipis.')
+
 
